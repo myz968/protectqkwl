@@ -1,0 +1,62 @@
+/* 全局样式：柔和浅色底，接近“晴空草地”的观感 */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  /* 窄屏时宁可压缩也不要横向滚动条 */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  color: #3d4a37;
+  background-color: #f2f9ec;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(198, 228, 175, 0.55), transparent 42%),
+    radial-gradient(circle at 88% 4%, rgba(186, 222, 240, 0.5), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(246, 236, 206, 0.6), transparent 55%),
+    linear-gradient(180deg, #f7fcf3 0%, #eef7e8 55%, #e9f4f7 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid rgba(111, 174, 63, 0.6);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(159, 208, 128, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 190, 145, 0.6);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

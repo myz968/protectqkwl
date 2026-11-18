@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#eaf4ff" />
+    <!--
+      不再写 screen-orientation / x5-orientation = landscape。
+      它们是「整页强制横屏」的老方案，在 X5 / 部分 App 内置浏览器里会把页面信箱化（两头黑边）
+      甚至让点击坐标错位；现在横屏引导由 OrientationGate 组件自己做，竖屏也能正常玩。
+    -->
+    <title>蓝拍战神好帅帅 · 专门打扰晴空萬李</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

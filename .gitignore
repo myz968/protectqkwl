@@ -1,0 +1,24 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# Vite
+.vite/
+*.local
+
+# Tauri（后续接入时生效）
+src-tauri/target/
+src-tauri/gen/
+
+# 编辑器
+.idea/workspace.xml
+.idea/shelf/
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*
